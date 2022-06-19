@@ -1,0 +1,26 @@
+.search-wrapper{
+    background-color:white;
+}
+.search-container{
+    display:flex;
+    justify-content:space-between;
+    padding:10px 50px;
+    align-items:center;
+    margin-top: 5px;
+
+}
+.sort-icon{
+    border-left: 1px solid rgb(199, 195, 195);
+    display: flex;
+    padding:20px;
+}
+.search-container input{
+    border: none;
+    width:80%;
+    font-size: 22px;
+    outline: none;
+}
+.search-icon img{
+    width:30px;
+    height: 20px;
+}

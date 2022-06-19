@@ -1,0 +1,83 @@
+.container{
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    height: 80px;
+    background-color: #fff;
+    justify-content: space-around;
+  
+}
+.hero-container{
+    margin-left: 10%;
+    font-weight: bold;
+    font-size: 12px;
+}
+
+.hero-container p{
+    border-radius: 10px;
+    background-color: rgb(226, 221, 221);
+    width: 100px;
+    margin-top: 10px;
+    text-align: center;
+}
+.hero-container > .button{
+    border-radius: 10px;
+    background-color: rgb(226, 221, 221);
+    width: 100px;
+    margin-top: 10px;
+    text-align: center;
+    font-size: 10px;
+    color: red;
+}
+.hero-container-two{
+    display: grid;
+    font-weight: lighter;
+}
+.hero-container-two p{
+    font-weight: bold;
+    font-size: 12px;
+}
+.hero-container-two span{
+    font-size: 11px;
+}
+.hero-container-three{
+    display: flex;
+}
+.hero-container-three img{
+    border-radius: 90px;
+    height: 40px;
+}
+.hero-three-span{
+    display: grid;
+    font-weight: lighter;
+    font-size:11px;
+    
+}
+.hero-three-span p{
+    font-weight: bold;
+    margin-top: 10px;
+}
+.hero-task{
+    border:1px solid darkgrey;
+    color:black;
+    font-size:11px;
+    width:130px;
+    height: 30px;
+    border-radius:0 30px 30px 30px;
+    padding:12px 20px;
+    text-align: flex-start;
+}
+.hero-task ul li{
+    margin-top:-5px ;
+
+}
+
+.container-wrapper{
+    flex-direction: column;
+    gap: 25px;
+    display: flex;
+    position: absolute;
+    margin-top: -500px;
+    margin-left:300px;
+    width:63%;
+}

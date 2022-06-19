@@ -1,0 +1,22 @@
+.sidebar-container {
+  background-color: white;
+  width: 22%;
+  height: fit-content;
+  margin-top: 30px;
+  position: relative;
+}
+.tag-container {
+  display: grid;
+  margin-left: 20px;
+}
+.tag-container h3 {
+  margin: 20px 0px 15px 0px;
+}
+.task-container {
+  display: grid;
+  margin-left: 20px;
+  margin-top: 10px;
+}
+.task-container h3 {
+  margin: 20px 0px 15px 0px;
+}
