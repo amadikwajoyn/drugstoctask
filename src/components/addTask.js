@@ -6,15 +6,15 @@ import "./addTask.css";
 function AddTask() {
   const { inputs, addTask, handleChange } = useTask();
   return (
-    <div className="register-style">
-      <h1 className="register-title">We are here to server you better! </h1>
-      <div className="card-wrap">
+    <div className="add-style">
+      {/* <h1 className="add-title">We are here to server you better! </h1> */}
+      <div className="cards-hold">
         <h1>AddTask</h1>
-        <form onSubmit={addTask} className="register-form">
+        <form onSubmit={addTask} className="add-form">
           <label className="form-labels">
             Assigned
             <input
-              className="gereral-div"
+              className="add-input"
               type="text"
               name="username"
               placeholder="Enter Username"
@@ -25,7 +25,7 @@ function AddTask() {
           <label className="form-labels">
             Price
             <input
-              className="gereral-div"
+              className="add-input"
               type="price"
               placeholder="Enter amount"
               value={inputs.price}
@@ -35,7 +35,7 @@ function AddTask() {
           <label className="form-labels">
             Task
             <input
-              className="gereral-div"
+              className="add-input"
               type="text"
               placeholder="task"
               value={inputs.task}
@@ -45,7 +45,7 @@ function AddTask() {
           <label className="form-labels">
             Url
             <input
-              className="gereral-div"
+              className="add-input"
               type="url"
               placeholder="url"
               value={inputs.url}
@@ -55,7 +55,7 @@ function AddTask() {
           <label className="form-labels">
             Tag
             <input
-              className="gereral-div"
+              className="add-input"
               type="tag"
               placeholder="tag"
               value={inputs.tag}
@@ -65,7 +65,7 @@ function AddTask() {
           <label className="form-labels">
             Delivery
             <input
-              className="gereral-div"
+              className="add-input add-input2"
               type="date"
               placeholder="delivery"
               value={inputs.delivery_at}
@@ -76,7 +76,7 @@ function AddTask() {
             Status
             <select
               name="status"
-              className=""
+              className="add-input"
               value={inputs.status}
               onChange={(e) => handleChange("status", e.target.value)}
             >
@@ -86,7 +86,7 @@ function AddTask() {
               <option value="Waiting Approval">Waiting Approval</option>
             </select>
           </label>
-          <button className="register-button" variant="primary" type="submit">
+          <button className="add-button" variant="primary" type="submit">
             AddTask
           </button>
         </form>
