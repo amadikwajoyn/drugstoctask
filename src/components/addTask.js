@@ -80,14 +80,15 @@ function AddTask() {
               value={inputs.status}
               onChange={(e) => handleChange("status", e.target.value)}
             >
-              <option value="Verify">Verify</option>
+              <option value="Waiting Approval">Waiting Approval</option>
               <option value="In Progress">In Progress</option>
               <option value="In Review">In Review</option>
-              <option value="Waiting Approval">Waiting Approval</option>
+              <option value="Verify">Verify</option>
+              
             </select>
           </label>
           <button className="add-button" variant="primary" type="submit">
-            AddTask
+            Add Task
           </button>
         </form>
       </div>

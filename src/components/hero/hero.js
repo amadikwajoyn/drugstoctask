@@ -13,7 +13,7 @@ function Hero({ tasks, deleteTask }) {
                 <p className="text=button">{task.tag}</p>
               </div>
               <div className="hero-container-two">
-                <p>N{task.price}</p>
+                <p>₦{task.price}</p>
                 <span>Task price</span>
                 <span>Delivery:within 3 day</span>
               </div>
@@ -30,7 +30,7 @@ function Hero({ tasks, deleteTask }) {
                 </ul>
               </div>
               <div className="delete">
-                <button onClick={() => deleteTask(ref)}>D</button>
+                <button onClick={() => deleteTask(ref)}>Delete</button>
               </div>
             </div>
           )) : "No Task Yet"}

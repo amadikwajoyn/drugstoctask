@@ -6,6 +6,7 @@
   margin: 5% 25%;
   background-color: rgb(10, 2, 46);
   color: #fff;
+  padding: 0 20px;
 
 }
 
@@ -57,24 +58,13 @@
   background-color:wheat;
 }
 
-@media only screen and (max-width: 500px) {
-  .cards-hold {
-    font-size: 16px;
+@media only screen and (max-width: 800px) {
+
+  .add-style {
     width: 100%;
-    width: auto;
-    margin-bottom:auto;
-    margin-bottom: 80px;
+    padding: 0 20px;
+    margin: 5% 0;
   }
-  .add_style {
-    width: 10%;
-  }
-  .add-form {
-    width: 350px;
-    margin-top: 18px; 
-    margin-left: 5px;
-  }
-  .add-button{
-      margin-top: 30px;
-  }
+  
 }
   

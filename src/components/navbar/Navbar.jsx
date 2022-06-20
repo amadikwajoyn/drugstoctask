@@ -12,7 +12,7 @@ function Navbar() {
           <span className="drug"> Drug</span>
           <span className="stoc">Stoc</span>
         </button>
-        <Link to="/add">
+        <Link to="/addtask">
           <button className="add-task">Add a new task +</button>
         </Link>
       </div>

@@ -4,12 +4,13 @@ import Navbar from "../components/navbar/Navbar";
 import SearchBar from "../components/searchBar/SearchBar";
 import Sidebar from "../components/sidebar/sidebar";
 import { deleteCollection, getAllCollections } from "../helpers";
+import './main.css';
 
 const Main = () => {
   const [tasks, setTasks] = useState([]);
 
   const deleteTask = (ref) => {
-    const prompt = window.confirm("Are you sure you want to delete task?");
+    const prompt = window.confirm("Do you want to proceed to delete this Task?");
     if (prompt) {
       deleteCollection(ref, tasks, setTasks);
     }
@@ -27,8 +28,11 @@ const Main = () => {
     <div className="app">
       <Navbar />
       <SearchBar />
-      <Sidebar />
-      <Hero tasks={tasks} deleteTask={deleteTask} />
+      <div className="main-general">
+        <Sidebar />
+        <Hero tasks={tasks} deleteTask={deleteTask} />
+      </div>
+      
     </div>
   );
 };
