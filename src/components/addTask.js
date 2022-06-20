@@ -7,9 +7,9 @@ function AddTask() {
   const { inputs, addTask, handleChange } = useTask();
   return (
     <div className="add-style">
-      {/* <h1 className="add-title">We are here to server you better! </h1> */}
       <div className="cards-hold">
-        <h1>AddTask</h1>
+        <h1>Create New Task</h1>
+        <br /> <br />
         <form onSubmit={addTask} className="add-form">
           <label className="form-labels">
             Assigned
